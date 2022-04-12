@@ -47,8 +47,8 @@
     <main class="contenedor sombra">
         <section>
             <h2>Picadas</h2>
-            <img src="img/qkyvariado.jpg"
-            <P>Duis eu malesuada est. In sit amet euismod metus, a efficitur libero.</P>
+            <img src="img/qkyvariado.jpg">
+            <p>Ricas Peicadas al estilo Venezolano.</p>
         </section>
            
         <section>
@@ -68,35 +68,56 @@
     <section>
         <h2 class="formulario-comentarios">Cuentanos tus experiencias</h2>
         <form>
-            <fieldset>
-                <legend>Cuentanos llenando el formulario</legend>
-    
-                <div>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Tu nombre">
-                </div>
-    
-                <div>
-                    <label>Teléfono</label>
-                    <input type="tel" placeholder="Tu Teléfono">
-                </div>
-                
-                <div>
-                    <label>Correo</label>
-                    <input type="email" placeholder="Tu Correo">
-                </div>
-    
-                <div>
-                    <label>Mensaje</label>
-                    <textarea></textarea>
-                </div>
-    
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-            </fieldset>
-        </form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCorreo">Correo</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Tu Correo">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Nombre</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Tu Nombre">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Apellido</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Tu Apellido">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Direccion</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Tu Direccion">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputState">Barrio</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Seleccione</option>
+                  <option>Palermo</option>
+                  <option>Belgrano</option>
+                  <option>Caballito</option>
+                  <option>San Telmo</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Codigo Postal</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Dejanos tu mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Recibir Informacion de Promociones y Eventos.
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
     </section>
+
 
     <footer>
         <h3>QKY´Snacks. Todos los derechos reservados</h3>

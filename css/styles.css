@@ -180,5 +180,15 @@ footer {
 .pedidos-eventos h2 {
     text-align: center;
 }
+.iconos-contactos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 768px) {
+    .iconos-contactos {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
 
 
