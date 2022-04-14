@@ -158,12 +158,17 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    margin-top: 3cm;
 }
 
 @media (max-width: 768px) {
     .pedidos-tipos {
         grid-template-columns: 1fr;
         justify-content: center;
+    }
+    .pedidos-express {
+        margin-top: 0cm;
+        margin-bottom: 2cm;
     }
 }
 
@@ -189,6 +194,15 @@ footer {
         grid-template-columns: 1fr;
         justify-items: center;
     }
+}
+.footer-qky {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4cm;
+}
+.footer-qky h3 {
+    margin-top: 2cm;
 }
 
 
